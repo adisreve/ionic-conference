@@ -5,7 +5,7 @@
 
     <ion-header>
       <ion-toolbar>
-        <ion-title>Menu</ion-title>
+        <ion-title>INTA 2017</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -21,23 +21,10 @@
         </button>
       </ion-list>
 
-      <ion-list>
-        <ion-list-header>
-          Account
-        </ion-list-header>
-        <button ion-item menuClose *ngFor="let p of loggedOutPages" (click)="openPage(p)">
-          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
-          {{p.title}}
-        </button>
-      </ion-list>
-
-      <ion-list>
-        <ion-list-header>
-          Tutorial
-        </ion-list-header>
+      <ion-list style="display:none;">
         <button ion-item menuClose (click)="openTutorial()">
           <ion-icon item-start name="hammer"></ion-icon>
-          Show Tutorial
+          Start screen
         </button>
       </ion-list>
     </ion-content>
@@ -49,7 +36,7 @@
 
     <ion-header>
       <ion-toolbar>
-        <ion-title>Menu</ion-title>
+        <ion-title>INTA 2017</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -65,23 +52,11 @@
         </button>
       </ion-list>
 
-      <ion-list>
-        <ion-list-header>
-          Account
-        </ion-list-header>
-        <button ion-item menuClose *ngFor="let p of loggedInPages" (click)="openPage(p)">
-          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
-          {{p.title}}
-        </button>
-      </ion-list>
 
-      <ion-list>
-        <ion-list-header>
-          Tutorial
-        </ion-list-header>
+      <ion-list style="display:none;">
         <button ion-item menuClose (click)="openTutorial()">
           <ion-icon item-start name="hammer"></ion-icon>
-          Show Tutorial
+          Start screen
         </button>
       </ion-list>
 

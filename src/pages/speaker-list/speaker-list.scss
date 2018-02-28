@@ -3,8 +3,14 @@ page-speaker-list {
     background: #EDEDED;
   }
 
+
+  .profilepic {
+    width:200px;
+  }
+
   .speaker-card {
     height: 100%;
+    width:auto;
     display: flex;
     flex-direction: column;
 
@@ -13,10 +19,10 @@ page-speaker-list {
     }
   }
   
-  // Todo: remove when this issue https://github.com/driftyco/ionic/issues/11212 is fixed
+
   @media(min-width: 769px) {
     .speaker-card {
-      height: 370px;
+      height: 330px;
     }
   }
 
